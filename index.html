@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" type="image/x-icon" href="img/bg-img-grey.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
+    <script src="templates.js"></script>
+    <script src="checkTypes.js"></script>
+
+</head>
+
+
+<body id="body" onload="init()">
+    <div id="full-side">
+        <div onclick="showSearchIcon()" id="overlay-full-side" class="overlay-full-side"></div>
+        <div class="overlay-grey" id="overlay-grey"></div>
+        <div class="menu-bar">
+            <div class="headline">
+                <a href="index.html"><h2>Pokedex</h2></a> 
+                <a href="index.html"><img id="header-img" class="header-img" src=""></a> 
+            </div>
+
+            <div class="input-container">
+                <img id="search-icon" class="search-icon" src="img/bg-img-grey.png">
+                <input id="input" onclick="hideSearchIcon()" onkeyup="filterPokemon()" placeholder="Search Pokemon...">
+            </div>
+
+        </div>
+
+        <div id="pokemon-area" class="pokemon-area">
+            <!--filled with JavaScript-->
+        </div>
+    </div>
+</body>
+
+</html>
